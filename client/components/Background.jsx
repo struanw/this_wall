@@ -1,6 +1,7 @@
 import React from 'react'
-//import logo from '../components/images/cant_image.JPG'
-//import second from '../components/images/can_image.JPG'
+
+//import logo from '../../server/public/images/cant_image.JPG'
+//import second from '../../server/public/images/can_image.JPG'
 import '../../server/public/main.css'
 
 
@@ -25,9 +26,10 @@ class Background extends React.Component {
 render () {
     return (
         <>
+         
             {this.state.logoVisible && <img className='Background' src={logo} alt='' />}
             {this.state.sndImage && <img className='Background' src={second} alt='' />}
-        
+     
         </> 
        
       )
